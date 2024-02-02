@@ -1,14 +1,18 @@
-# Helo World!
+# Neovim Config
 
 ## Shortcuts
 
-<kbd>Space</kbd>+<kbd>Hello</kbd>
+### Neo Tree
 
-Hello
-export NVM_DIR=~/.nvm
+<kbd>Ctrl</kbd>+<kbd>e</kbd> Browse the files of the current project in a floating window
 
-Thest more 
+### Telescope
 
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+<kbd>Leader</kbd><kbd>t</kbd><kbd>b</kbd> Show a list of all the current open buffers  
+<kbd>Leader</kbd><kbd>t</kbd><kbd>g</kbd> Lets you search for text in all the files of your project  
+<kbd>Leader</kbd><kbd>t</kbd><kbd>f</kbd> Lets you search for a specefic filename in the files of your project.  
 
-And some more
+### Auto completion
+
+<kbd>Ctrl</kbd>+<kbd>e</kbd> Cancel auto complete 
+
