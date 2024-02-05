@@ -14,5 +14,8 @@
 
 ### Auto completion
 
-<kbd>Ctrl</kbd>+<kbd>e</kbd> Cancel auto complete 
-
+<kbd>Ctrl</kbd>+<kbd>e</kbd> Cancel auto complete  
+<kbd>Ctrl</kbd>+<kbd>b</kbd> Move down in the docs  
+<kbd>Ctrl</kbd>+<kbd>f</kbd> Move up in the docs  
+<kbd>Ctrl</kbd>+<kbd>Space</kbd> Open the auto complete menu  
+<kbd>Enter</kbd> Accept the selected completion.  
