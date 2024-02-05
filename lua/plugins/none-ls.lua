@@ -13,7 +13,9 @@ return {
 				null_ls.builtins.formatting.prettier,
 				null_ls.builtins.diagnostics.eslint_d,
 
-                null_ls.builtins.diagnostics.hadolint
+				null_ls.builtins.diagnostics.hadolint,
+
+				null_ls.builtins.code_actions.refactoring,
 			},
 		})
 		vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
