@@ -26,8 +26,11 @@ return {
 
                 capabilities = capabilities,
             })
-            lspconfig.pyright.setup({
-
+--             lspconfig.pyright.setup({
+-- 
+--                 capabilities = capabilities,
+--             })
+            lspconfig.jedi_language_server.setup({
                 capabilities = capabilities,
             })
 
