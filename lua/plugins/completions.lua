@@ -4,6 +4,7 @@ return {
 		dependencies = {
 			"hrsh7th/cmp-buffer",
 			"hrsh7th/cmp-path",
+			"hrsh7th/cmp-cmdline",
 		},
 	},
 	{
@@ -42,6 +43,7 @@ return {
 					{ name = "luasnip" }, -- For luasnip users.
 					{ name = "buffer" },
 					{ name = "path" },
+					{ name = "cmdline" },
 				}),
 			})
 		end,
