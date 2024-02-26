@@ -29,5 +29,18 @@ return {
 			"<cmd>lua require('neotest').run.run({ jestCommand = 'jest --watch ' })<cr>",
 			{}
 		)
+        vim.api.nvim_set_keymap(
+            "n",
+            "<leader>ntf",
+            "<cmd>lua require('neotest').run.run(vim.fn.expand('%'))<cr>",
+            {}
+        )
+
+        vim.api.nvim_set_keymap(
+            "n",
+            "<leader>nts",
+            "<cmd>lua require('neotest').summary.toggle()<cr>",
+            {}
+        )
 	end,
 }

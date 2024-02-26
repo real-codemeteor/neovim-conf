@@ -19,3 +19,6 @@
 <kbd>Ctrl</kbd>+<kbd>f</kbd> Move up in the docs  
 <kbd>Ctrl</kbd>+<kbd>Space</kbd> Open the auto complete menu  
 <kbd>Enter</kbd> Accept the selected completion.  
+
+### Unit testing
+<kbd>Leader</kbd><kbd>n</kbd><kbd>t</kbd><kbd>f</kbd> Run all tests in the current file
