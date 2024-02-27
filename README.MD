@@ -22,3 +22,5 @@
 
 ### Unit testing
 <kbd>Leader</kbd><kbd>n</kbd><kbd>t</kbd><kbd>f</kbd> Run all tests in the current file
+<kbd>Leader</kbd><kbd>n</kbd><kbd>t</kbd><kbd>w</kbd> Run tests watcher
+<kbd>Leader</kbd><kbd>n</kbd><kbd>t</kbd><kbd>s</kbd> Toggle test summary
