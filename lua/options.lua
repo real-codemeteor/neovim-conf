@@ -5,6 +5,7 @@ vim.cmd("set shiftwidth=4")
 vim.cmd("set nu")
 vim.cmd("set termguicolors")
 vim.cmd("set relativenumber")
+vim.cmd("set clipboard=unnamedplus")
 vim.g.mapleader = " "
 -- Show an error message if a disabled key is pressed
 local msg = [[<cmd>echohl Error | echo "KEY DISABLED" | echohl None<CR>]]
