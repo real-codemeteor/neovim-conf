@@ -3,14 +3,14 @@ return {
 	dependencies = {
 		"rcarriga/nvim-dap-ui",
 		"mfussenegger/nvim-dap-python",
-        "theHamsta/nvim-dap-virtual-text"
+		"theHamsta/nvim-dap-virtual-text",
 	},
 	config = function()
 		local dap = require("dap")
 		local dapui = require("dapui")
 
 		require("dapui").setup()
-        require("nvim-dap-virtual-text").setup()
+		require("nvim-dap-virtual-text").setup()
 
 		local python_path = vim.fn.system({ "which", "python" })
 		require("dap-python").setup(python_path)
@@ -73,19 +73,19 @@ return {
 
 		vim.fn.sign_define(
 			"DapBreakpoint",
-			{ text = "", texthl = "DapBreakpoint", linehl = "DapBreakpoint", numhl = "DapBreakpoint" }
+			{ text = "🐞", texthl = "DapBreakpoint", linehl = "DapBreakpoint", numhl = "DapBreakpoint" }
 		)
 		vim.fn.sign_define(
 			"DapBreakpointCondition",
-			{ text = "", texthl = "DapBreakpoint", linehl = "DapBreakpoint", numhl = "DapBreakpoint" }
+			{ text = "🌩️", texthl = "DapBreakpoint", linehl = "DapBreakpoint", numhl = "DapBreakpoint" }
 		)
 		vim.fn.sign_define(
 			"DapBreakpointRejected",
-			{ text = "", texthl = "DapBreakpoint", linehl = "DapBreakpoint", numhl = "DapBreakpoint" }
+			{ text = "⁉️", texthl = "DapBreakpoint", linehl = "DapBreakpoint", numhl = "DapBreakpoint" }
 		)
 		vim.fn.sign_define(
 			"DapLogPoint",
-			{ text = "", texthl = "DapLogPoint", linehl = "DapLogPoint", numhl = "DapLogPoint" }
+			{ text = "🪵", texthl = "DapLogPoint", linehl = "DapLogPoint", numhl = "DapLogPoint" }
 		)
 		vim.fn.sign_define(
 			"DapStopped",

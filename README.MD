@@ -32,3 +32,6 @@
 
 <kbd>Leader</kbd><kbd>r</kbd><kbd>n</kbd> Rename the current word  
 <kbd>Leader</kbd><kbd>r</kbd><kbd>r</kbd> Show the refactoring menu   
+
+### Debugging
+<kbd>Leader</kbd><kbd>b</kbd> Toggle breakpoint

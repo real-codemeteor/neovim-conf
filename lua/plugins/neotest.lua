@@ -58,5 +58,13 @@ return {
             "<cmd>lua require('neotest').output_panel.toggle()<cr>",
             {}
         )
+
+
+        vim.api.nvim_set_keymap(
+            "n",
+            "<leader>ntd",
+            "<cmd>lua require('neotest').run.run({strategy = 'dap'})<cr>",
+            {}
+        )
 	end,
 }
