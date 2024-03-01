@@ -12,6 +12,7 @@ return {
 			adapters = {
 				require("neotest-python")({
 					dap = { justMyCode = false },
+                    runner = "pytest",
 				}),
 				require("neotest-jest")({
 					jestCommand = "npm test --",
@@ -26,7 +27,8 @@ return {
 		vim.api.nvim_set_keymap(
 			"n",
 			"<leader>ntw",
-			"<cmd>lua require('neotest').run.run({ jestCommand = 'jest --watch ' })<cr>",
+			--"<cmd>lua require('neotest').run.run({ jestCommand = 'jest --watch ' })<cr>",
+            "<cmd>lua require('neotest').watch.toggle(vim.fn.expand('%'))<cr>",
 			{}
 		)
         vim.api.nvim_set_keymap(
@@ -40,6 +42,20 @@ return {
             "n",
             "<leader>nts",
             "<cmd>lua require('neotest').summary.toggle()<cr>",
+            {}
+        )
+
+        vim.api.nvim_set_keymap(
+            "n",
+            "<leader>ntr",
+            "<cmd>lua require('neotest').run.run()<cr>",
+            {}
+        )
+
+        vim.api.nvim_set_keymap(
+            "n",
+            "<leader>nto",
+            "<cmd>lua require('neotest').output_panel.toggle()<cr>",
             {}
         )
 	end,
