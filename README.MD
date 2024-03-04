@@ -41,9 +41,9 @@ poetry add --group dev debugpy
 ```
 
 <kbd>Leader</kbd><kbd>b</kbd> Toggle breakpoint  
-<kdb>F5</kbd> Start Debugging  
+<kbd>F5</kbd> Start Debugging  
 <kbd>Shift</kbd>+<kbd>F5</kbd> Stop Debugging  
-<kbd>Ctrl</kdb>+<kbd>Shift</kbd>+<kbd>F5</kbd> Restart Debugging
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F5</kbd> Restart Debugging  
 <kbd>F10</kbd> Step Over  
 <kbd>F11</kbd> Step Into  
 <kbd>F12</kbd> Step out  
