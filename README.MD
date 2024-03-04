@@ -34,4 +34,10 @@
 <kbd>Leader</kbd><kbd>r</kbd><kbd>r</kbd> Show the refactoring menu   
 
 ### Debugging
+
+When debugging python applications, make sure you have debugpy installed in your virtual environment.  
+```bash
+poetry add --group dev debugpy
+```
+
 <kbd>Leader</kbd><kbd>b</kbd> Toggle breakpoint
