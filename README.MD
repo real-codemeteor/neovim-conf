@@ -34,4 +34,17 @@
 <kbd>Leader</kbd><kbd>r</kbd><kbd>r</kbd> Show the refactoring menu   
 
 ### Debugging
-<kbd>Leader</kbd><kbd>b</kbd> Toggle breakpoint
+
+When debugging python applications, make sure you have debugpy installed in your virtual environment.  
+```bash
+poetry add --group dev debugpy
+```
+
+<kbd>Leader</kbd><kbd>b</kbd> Toggle breakpoint  
+<kbd>F5</kbd> Start Debugging  
+<kbd>Shift</kbd>+<kbd>F5</kbd> Stop Debugging  
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F5</kbd> Restart Debugging  
+<kbd>F10</kbd> Step Over  
+<kbd>F11</kbd> Step Into  
+<kbd>F12</kbd> Step out  
+
