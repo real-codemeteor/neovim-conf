@@ -15,12 +15,12 @@ return {
 					runner = "pytest",
 				}),
 				require("neotest-jest")({
-					-- jestCommand = "npm test --",
+					jestCommand = "npm test --",
 					--                    jestCommand = require("neotest-jest.jest-util").getJestCommand(vim.fn.expand("%:p:h"))
 					-- .. " --watch",
-					jestConfigFile = "custom.jest.config.ts",
+					jestConfigFile = "jest.config.js",
 					env = { CI = true },
-					cwd = function(path)
+					cwd = function()
 						return vim.fn.getcwd()
 					end,
 				}),
