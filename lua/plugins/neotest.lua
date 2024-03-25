@@ -1,11 +1,20 @@
+function Watch_tests()
+	if vim.o.filetype == "javascript" then
+		require("neotest").run.run({ vim.fn.expand("%"), vitestCommand = "npx vitest -w" })
+	else
+		require("neotest").watch.toggle(vim.fn.expand("%"))
+	end
+end
+
 return {
 	"nvim-neotest/neotest",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		"antoinemadec/FixCursorHold.nvim",
 		"nvim-treesitter/nvim-treesitter",
-		"nvim-neotest/neotest-jest",
 		"nvim-neotest/neotest-python",
+		"marilari88/neotest-vitest",
+		"nvim-neotest/nvim-nio",
 	},
 	config = function()
 		require("neotest").setup({
@@ -14,15 +23,8 @@ return {
 					dap = { justMyCode = false },
 					runner = "pytest",
 				}),
-				require("neotest-jest")({
-					jestCommand = "npm test --",
-					--                    jestCommand = require("neotest-jest.jest-util").getJestCommand(vim.fn.expand("%:p:h"))
-					-- .. " --watch",
-					jestConfigFile = "jest.config.js",
-					env = { CI = true },
-					cwd = function()
-						return vim.fn.getcwd()
-					end,
+				require("neotest-vitest")({
+					vitestCommand = "npx vitest -w",
 				}),
 			},
 		})
@@ -30,7 +32,8 @@ return {
 			"n",
 			"<leader>ntw",
 			--"<cmd>lua require('neotest').run.run({ jestCommand = 'jest --watch ' })<cr>",
-			"<cmd>lua require('neotest').watch.toggle(vim.fn.expand('%'))<cr>",
+			--"<cmd>lua require('neotest').watch.toggle(vim.fn.expand('%'))<cr>",
+			"<cmd>lua Watch_tests()<cr>",
 			{}
 		)
 		vim.api.nvim_set_keymap("n", "<leader>ntf", "<cmd>lua require('neotest').run.run(vim.fn.expand('%'))<cr>", {})
