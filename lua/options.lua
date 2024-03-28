@@ -6,6 +6,8 @@ vim.cmd("set nu")
 vim.cmd("set termguicolors")
 vim.cmd("set relativenumber")
 vim.cmd("set clipboard=unnamedplus")
+vim.cmd("set undodir=~/.nvim/undodir")
+vim.cmd("set undofile")
 vim.g.mapleader = " "
 -- Show an error message if a disabled key is pressed
 local msg = [[<cmd>echohl Error | echo "KEY DISABLED" | echohl None<CR>]]
