@@ -48,3 +48,9 @@ poetry add --group dev debugpy
 <kbd>F11</kbd> Step Into  
 <kbd>F12</kbd> Step out  
 
+### LSP
+<kbd>Leader</kbd><kbd>c</kbd><kbd>a</kbd> Code action
+<kbd>Leader</kbd><kbd>g</kbd><kbd>f</kbd> Format the current file
+<kbd>Leader</kbd><kbd>g</kbd><kbd>n</kbd> Go to next error/warning
+<kbd>Leader</kbd><kbd>g</kbd><kbd>N</kbd> Go to previous error/warning
+
