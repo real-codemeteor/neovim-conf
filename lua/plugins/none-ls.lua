@@ -29,7 +29,7 @@ return {
 			},
 		})
 		vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
-        vim.keymap.set("n", "<leader>gn", vim.lsp.diagnostic.goto_next(), {})
-        vim.keymap.set("n", "<leader>gN", vim.lsp.diagnostic.goto_prev(), {})
+        vim.keymap.set("n", "<leader>gn", vim.diagnostic.goto_next(), {})
+        vim.keymap.set("n", "<leader>gN", vim.diagnostic.goto_prev(), {})
 	end,
 }
