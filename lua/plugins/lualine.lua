@@ -3,7 +3,7 @@ return {
 	config = function()
 		require("lualine").setup({
 			options = {
-				theme = "solarized_dark",
+				theme = "catppuccin",
 			},
 			sections = {
 				lualine_a = { "mode" },

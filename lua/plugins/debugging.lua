@@ -18,8 +18,12 @@ return {
 		table.insert(require("dap").configurations.python, {
 			type = "python",
 			request = "launch",
-			name = "My launcher",
-			program = "${file}",
+			name = "Django",
+			program = vim.loop.cwd() .. "/manage.py",
+            args = { "runserver", "--noreload" },
+            justMyCode = true,
+            django = true,
+            console = "internalTerminal",
 		})
 
 		dap.listeners.before.attach.dapui_config = function()
