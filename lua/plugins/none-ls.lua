@@ -13,6 +13,7 @@ return {
 			--	null_ls.builtins.formatting.isort,
 				require("none-ls.diagnostics.ruff"),
                 require("none-ls.formatting.ruff"),
+                null_ls.builtins.diagnostics.mypy,
 
 				null_ls.builtins.formatting.prettier,
 				--null_ls.builtins.diagnostics.eslint_d,
